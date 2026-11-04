@@ -252,3 +252,125 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Galleria fotografica Swiper */
+
+.luoghi-swiper {
+  width: 100%;
+  max-width: 54rem;
+  margin: 2rem auto;
+  padding-bottom: 3rem;
+
+  --swiper-navigation-color: #234c78;
+}
+
+.luoghi-swiper figure {
+  margin: 0;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.luoghi-swiper img {
+  display: block;
+  width: 100%;
+  height: 22rem;
+  object-fit: cover;
+}
+
+.luoghi-swiper figcaption {
+  padding: 1.25rem 1.5rem;
+}
+
+.luoghi-swiper figcaption h3 {
+  margin-top: 0;
+}
+
+.luoghi-swiper figcaption p {
+  margin-bottom: 0;
+}
+
+.luoghi-swiper .swiper-button-prev,
+.luoghi-swiper .swiper-button-next {
+  background-color: #f5f2e9;
+  border-radius: 50%;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.luoghi-swiper .swiper-button-prev::after,
+.luoghi-swiper .swiper-button-next::after {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.luoghi-swiper button:focus-visible {
+  outline: 3px solid #202923;
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .luoghi-swiper img {
+    height: 16rem;
+  }
+}
+/* Mappa delle sedi */
+
+.map-container {
+  width: 100%;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: 1px solid #b7c0b7;
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+/* Indirizzi delle sedi */
+
+.venues-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.venue-card {
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+}
+
+.venue-card h3 {
+  margin-top: 0;
+}
+
+.venue-card a {
+  font-weight: bold;
+}
+
+/* Responsive */
+
+@media (min-width: 600px) {
+  .venues-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .venues-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .map-container iframe {
+    height: 350px;
+  }
+}

@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Info e luoghi — Segnale</title>
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.css">
 </head>
+
 <body>
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
   <header class="site-header">
@@ -20,11 +22,57 @@
   </header>
 
   <main id="contenuto" class="container">
-    <section class="intro">
-      <p class="eyebrow">12–13 giugno · Torino · Festival immaginario</p>
-      <h1 id="titolo-info">Info e luoghi</h1>
-      <p class="lead">Tutto quello che devi sapere per partecipare al festival.</p>
-    </section>
+    <section class="content-section">
+  <h2>Scopri le sedi del festival</h2>
+
+  <div class="swiper luoghi-swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <figure>
+          <img
+            src="assets/luoghi/sede-centrale.jpg"
+            alt="Edificio della sede centrale del Politecnico di Torino"
+          >
+          <figcaption>
+            <h3>Officina Nord</h3>
+            <p>Corso Duca degli Abruzzi 24 — La sede centrale del festival.</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="swiper-slide">
+        <figure>
+          <img
+            src="assets/luoghi/politecnico-valentino.jpg"
+            alt="Cortile geometrico del Politecnico di Torino al Valentino"
+          >
+          <figcaption>
+            <h3>Spazio Forma</h3>
+            <p>Viale Mattioli 39 — Uno spazio dedicato a laboratori e sperimentazioni.</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="swiper-slide">
+        <figure>
+          <img
+            src="assets/luoghi/mirafiori.jpg"
+            alt="Edificio del centro design del Politecnico di Torino a Mirafiori"
+          >
+          <figcaption>
+            <h3>Cortile Comune</h3>
+            <p>Corso Luigi Settembrini 178 — Uno spazio dedicato a mostre e percorsi.</p>
+          </figcaption>
+        </figure>
+      </div>
+
+    </div>
+
+    <div class="swiper-button-prev" aria-label="Fotografia precedente" tabindex="0" role="button"></div>
+    <div class="swiper-button-next" aria-label="Fotografia successiva" tabindex="0" role="button"></div>
+  </div>
+</section>
 
     <section class="content-section">
       <h2>Chi siamo</h2>
@@ -69,8 +117,108 @@
       <h2>Domande frequenti</h2>
       <p class="reading-text">Gli eventi sono gratuiti? Sì, tutti gli appuntamenti sono completamente gratuiti. Devo prenotare? No, puoi arrivare liberamente. Ci sono orari di apertura specifici? Ogni appuntamento ha un orario proprio: consulta il programma. Posso portare bambini? Certamente, il festival è pensato per tutte le età.</p>
     </section>
+    <section class="content-section" id="come-arrivare">
+
+  <p class="eyebrow">Torino · Le sedi del festival</p>
+
+  <h2>Come arrivare</h2>
+
+  <p class="reading-text">
+    Il festival Segnale si svolge in tre sedi del Politecnico di Torino.
+    Consulta la mappa per individuare i luoghi degli appuntamenti.
+  </p>
+
+  <div class="map-container">
+    <iframe
+      id="mappa-sedi"
+      title="Mappa delle tre sedi di riferimento per il festival Segnale a Torino"
+      src="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true#12/45.0465/7.6528"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <p>
+    <a
+      href="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true#12/45.0465/7.6528"
+      target="_blank"
+      rel="noopener noreferrer">
+      Visualizza la mappa a schermo intero
+    </a>
+  </p>
+
+</section>
+<section class="content-section">
+
+  <p class="eyebrow">I punti di riferimento</p>
+
+  <h2>Le sedi del festival</h2>
+
+  <div class="venues-grid">
+
+    <article class="venue-card">
+      <h3>Officina Nord</h3>
+      <p><strong>Sede centrale</strong></p>
+      <p>Corso Duca degli Abruzzi 24, Torino</p>
+      <a
+        href="https://www.google.com/maps/search/?api=1&amp;query=Corso+Duca+degli+Abruzzi+24+Torino"
+        target="_blank"
+        rel="noopener noreferrer">
+        Indicazioni stradali
+      </a>
+    </article>
+
+    <article class="venue-card">
+      <h3>Spazio Forma</h3>
+      <p><strong>Politecnico al Valentino</strong></p>
+      <p>Viale Mattioli 39, Torino</p>
+      <a
+        href="https://www.google.com/maps/search/?api=1&amp;query=Viale+Mattioli+39+Torino"
+        target="_blank"
+        rel="noopener noreferrer">
+        Indicazioni stradali
+      </a>
+    </article>
+
+    <article class="venue-card">
+      <h3>Cortile Comune</h3>
+      <p><strong>Sede di Mirafiori</strong></p>
+      <p>Corso Luigi Settembrini 178, Torino</p>
+      <a
+        href="https://www.google.com/maps/search/?api=1&amp;query=Corso+Luigi+Settembrini+178+Torino"
+        target="_blank"
+        rel="noopener noreferrer">
+        Indicazioni stradali
+      </a>
+    </article>
+
+  </div>
+
+</section>
   </main>
 
   <footer class="site-footer"><div class="container"><p>Segnale · Progetto didattico · Festival immaginario</p></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.luoghi-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: false,
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+
+    a11y: {
+      enabled: true,
+    },
+  });
+</script>
 </body>
 </html>
