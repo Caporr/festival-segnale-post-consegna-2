@@ -214,3 +214,41 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Venue cards nella pagina Info */
+.venue-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.venue-card {
+  padding: 1.5rem;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
+
+.venue-card h3 {
+  margin-top: 0;
+  color: var(--colore-primario);
+}
+
+.venue-card p {
+  margin: 0.5rem 0;
+}
+
+/* Responsive: 2 colonne da 768px */
+@media (min-width: 768px) {
+  .venue-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive: 3 colonne da 1024px */
+@media (min-width: 1024px) {
+  .venue-details {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
