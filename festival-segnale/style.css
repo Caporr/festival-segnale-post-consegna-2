@@ -112,7 +112,8 @@ h3 {
 }
 
 .reading-text {
-  max-width: 65ch;
+  width: 100%;
+  max-width: none;
 }
 
 .button-link {
